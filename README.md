@@ -12,15 +12,12 @@
 - 系統狀態具有簡單歷史紀錄功能（最多 40 筆）
 
 ## 🖼 系統架構
-Flask (Python)
-│
+Flask (Python)  
+│  
 ├── / (index.html - 前端頁面)  
 ├── /api/data 取得即時模擬數據  
 ├── /api/update_params 更新 PID 控制參數  
 └── /api/toggle/<id> 切換指定水泵開關狀態  
----
-
-
 
 ## 🧪 API 說明
 
