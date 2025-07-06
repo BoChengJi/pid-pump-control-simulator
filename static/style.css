@@ -1,0 +1,59 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#pumpContainer {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.pump-card {
+  background: #fff;
+  border: 2px solid green;
+  border-radius: 10px;
+  width: 170px;
+  padding: 10px;
+  text-align: center;
+}
+.pump-card.off {
+  border-color: red;
+  background: #ffeaea;
+}
+.pump-card img {
+  width: 60px;
+  height: auto;
+}
+
+.toggle-btn {
+  margin-top: 8px;
+}
+
+.charts {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+canvas {
+  background: #fff;
+  border-radius: 10px;
+  height: 200px !important;
+  max-width: 45%;
+}
+
+.params {
+  margin-top: 20px;
+}
+label {
+  display: inline-block;
+  margin-right: 10px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>泵浦數位雙生模擬</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>🚰 數位雙生模擬 (三泵並聯 + PID)</h2>
+
+  <div class="status-bar">
+    <div>目標壓力：<span id="targetPressure">4.00</span> bar</div>
+    <div>當前壓力：<span id="totalPressure">0.00</span> bar</div>
+    <div>總功率：<span id="totalPower">0.000</span> kW</div>
+  </div>
+
+  <div id="pumpContainer"></div>
+
+  <div class="charts">
+    <canvas id="chart"></canvas>
+    <canvas id="pidChart"></canvas>
+  </div>
+
+  <div class="params">
+    <label>Kp<input id="inputKp" type="number" step="0.1"></label>
+    <label>Ki<input id="inputKi" type="number" step="0.01"></label>
+    <label>Kd<input id="inputKd" type="number" step="0.01"></label>
+    <label>目標壓力<input id="inputTargetPressure" type="number" step="0.1"></label>
+    <button id="btnUpdate">更新參數</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
