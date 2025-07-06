@@ -85,4 +85,4 @@ MIT License
 
 demo:
 
-!(demo.gif)
+![Demo](demo.gif)
