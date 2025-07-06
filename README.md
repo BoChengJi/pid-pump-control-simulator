@@ -27,7 +27,7 @@ Flask (Python)
 取得當前模擬狀態資料。
 
 Response 範例：
-```json
+json
 {
   "pump_states": [1, 1, 0],
   "flows": [15.0, 15.0, 0.0],
@@ -85,4 +85,4 @@ MIT License
 
 demo:
 
-![展示動畫](demo.gif)
+!(demo.gif)
